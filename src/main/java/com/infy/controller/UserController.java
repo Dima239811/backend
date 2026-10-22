@@ -20,7 +20,7 @@ import java.util.List;
 @RequestMapping("/api")
 @CrossOrigin(origins = "*")
 public class UserController {
-    private static final String FILE_PATH = "data.txt";
+    private static final String FILE_PATH = "/app/data/data.txt";
 
     @PostMapping("/send-name")
     public ResponseEntity<String> receiveName(@RequestBody UserRequest request) {
